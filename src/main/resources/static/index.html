@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>Task Manager</h1>
+        <p>Front simples (HTML/CSS/JS) consumindo uma API Java (Spring).</p>
+    </header>
+
+    <section class="card">
+        <h2>Nova tarefa</h2>
+        <form id="form">
+            <div class="row">
+                <label>Título</label>
+                <input id="titulo" type="text" placeholder="Ex: Estudar Java" required />
+            </div>
+
+            <div class="row">
+                <label>Descrição</label>
+                <input id="descricao" type="text" placeholder="Ex: Fazer exercícios de API" />
+            </div>
+
+            <button type="submit">Adicionar</button>
+        </form>
+        <p id="msg" class="msg"></p>
+    </section>
+
+    <section class="card">
+        <h2>Minhas tarefas</h2>
+        <div id="list" class="list"></div>
+    </section>
+</div>
+
+<script src="/js/app.js"></script>
+</body>
+</html>
